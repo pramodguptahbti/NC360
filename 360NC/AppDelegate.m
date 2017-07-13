@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
+
+static NSString *const kAPIKey = @"AIzaSyBphumH1qOp4FjJw-eo0SjC09alENg3_Og";
 
 @interface AppDelegate ()
 
@@ -17,6 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+//    [tabBarController setupSwipeGestureRecognizersAllowCyclingThroughTabs:YES];
+    
+    [GMSServices provideAPIKey:kAPIKey];
+    
+    
     return YES;
 }
 

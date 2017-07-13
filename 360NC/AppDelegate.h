@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITabBarController+Swipe.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
